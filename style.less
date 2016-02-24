@@ -1,0 +1,228 @@
+@import "variables.less";
+@import "mixins.less";
+
+body { 
+    padding-top: 85px;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+.navbar {
+    // width: 100%;
+    background-color: @main-color;
+    height: 80px;
+    margin-top: -10px;
+}
+.nav-links {
+    padding-top: 10px;
+    margin-left: 17%;
+    
+       li {
+        display: inline;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding: 24px 0px 14px 30px;
+                    }
+            a {
+                text-decoration: none;
+                color: white;
+                }
+}
+
+.header {
+    text-align: center;
+    // padding-top: 70px;
+    
+    h1 {
+        padding-bottom: -10px;
+    }
+}
+
+#skills {
+    padding-top: 47px;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.content-name {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.content-box {
+    height: 60px;
+    border-top: 4px solid @main-color;
+    border-bottom: 4px solid @main-color;
+    text-align: center;
+    
+    .h2 {
+        padding-bottom: 20px;
+    }
+}
+
+.content-layout {
+    display: inline;
+}
+
+.para-box {
+    padding-bottom: 20px;
+}
+
+.paragraph {
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.line-para1 {
+    padding-bottom: 5px;
+}
+
+.line-para2 {
+    padding-bottom: 30px;
+}
+
+.rp1 {
+    text-indent: 45px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rp2 {
+    text-indent: 55px;
+    font-style: italic;
+    color: @main-color;
+}
+
+.rp3 {
+    text-indent: 55px;
+}
+
+.edu-list {
+    padding-bottom: 25px;
+}
+
+.contact-box {
+    height: 400px;
+    width: 500px;
+    background-color: @main-color;
+    .corners;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    color: white;
+    font-size: 15px;
+    padding-top: 10%;
+    padding-left: 14%;
+}
+
+.form-line {
+    width: 350px;
+    height: 30px;
+    .corners;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    background-color: white;
+    margin-top: 5px;   
+    width: 350px;
+    height: 100px;
+    .corners;
+    font-size: 18px;
+}
+
+.send-button {
+    background-color: white;
+    margin-top: 5px;   
+    width: 357px;
+    height: 37px;
+    .corners;
+    color: @main-color;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer {
+    height: 60px;
+    border-top: 4px solid @main-color;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.footer-links {
+    li {
+        display: inline;
+        font-size: 20px;
+        font-weight: bold;
+        color: @main-color;
+        padding: 14px 0px 0px 14px;
+    }
+    
+    a {
+        color: @main-color;
+        font-size: 17px;
+    }
+    
+    p {
+        font-size: 17px;
+        color: @main-color;
+    }
+}
+
+a:hover {
+    color: darken(@link-color, 50%);
+}
+
+// .icon-bar {
+//     color: white;
+// }
+
+.navbar-toggle {
+    border: @main-color;
+}
+// .navbar-nav {
+//     width: 80%;
+//     margin: auto;
+//     background-color: @main-color;
+//     color: white;    
+// }
+
+// @media .navbar-nav {
+//     width: 30%;
+//     float: right;
+// }
+.navbar-collapse {
+    border-top:  @main-color;
+}
+.navbar-inverse {
+    border: @main-color;
+}
+
+ @media screen and (max-width: 768px) {
+    .navbar-nav  {
+    width: 30%;
+    float: right;
+    background-color: @main-color;
+    }
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 20px;
+}
