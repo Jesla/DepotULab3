@@ -10,11 +10,12 @@ body {
 p {
     font-size: 15px;
 }
+
 .navbar {
     background-color: @main-color;
     height: 50px;
-    // margin-top: -10px;
 }
+
 .nav-links {
     padding-top: 10px;
     margin-left: 17%;
@@ -26,18 +27,45 @@ p {
         color: white;
         padding: 24px 0px 14px 30px;
                     }
-            a {
-                text-decoration: none;
-                color: white;
-                }
+            // a {
+            //     text-decoration: none;
+            //     color: white;
+            //     }
+                
+}
+
+.navbar-toggle {
+    border: @main-color;
+}
+
+.navbar-collapse {
+    border-top:  @main-color;
+}
+
+.navbar-inverse {
+    border: @main-color;
+}
+
+ @media screen and (max-width: 768px) {
+    .navbar-nav  {
+    width: 30%;
+    float: right;
+    background-color: @main-color;
+    margin: 0px -15px;
+    }
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 20px;
 }
 
 .header {
     text-align: center;
     
-    h1 {
-        padding-bottom: -10px;
-    }
+        h1 {
+            padding-bottom: -10px;
+            }
 }
 
 // #skills {
@@ -59,9 +87,9 @@ p {
     border-bottom: 4px solid @main-color;
     text-align: center;
     
-    p {
-        font-size: 25px;
-    }
+        p {
+            font-size: 25px;
+        }
 }
 
 .content-layout {
@@ -108,6 +136,7 @@ p {
 
 .edu-list {
     padding-bottom: 25px;
+    padding-top: 20px;
 }
 
 .contact-box {
@@ -147,7 +176,7 @@ textarea {
 .send-button {
     background-color: white;
     margin-top: 5px;   
-    width: 357px;
+    width: 350px;
     height: 37px;
     .corners;
     color: @main-color;
@@ -161,9 +190,13 @@ textarea {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+        a:hover {
+            color: darken(@link-color, 50%);
+            text-decoration: none;
+        }
 }
 
-.footer-links {
+.footer-links { 
     li {
         display: inline;
         font-size: 20px;
@@ -181,33 +214,4 @@ textarea {
         font-size: 17px;
         color: @main-color;
     }
-}
-
-a:hover {
-    color: darken(@link-color, 50%);
-}
-
-.navbar-toggle {
-    border: @main-color;
-}
-
-.navbar-collapse {
-    border-top:  @main-color;
-}
-.navbar-inverse {
-    border: @main-color;
-}
-
- @media screen and (max-width: 768px) {
-    .navbar-nav  {
-    width: 30%;
-    float: right;
-    background-color: @main-color;
-    margin: 0px -15px;
-    }
-}
-
-.navbar-inverse .navbar-nav li a {
-    color: white;
-    font-size: 20px;
 }

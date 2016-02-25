@@ -21,9 +21,26 @@ p {
   color: white;
   padding: 24px 0px 14px 30px;
 }
-.nav-links a {
-  text-decoration: none;
+.navbar-toggle {
+  border: #85c5c6;
+}
+.navbar-collapse {
+  border-top: #85c5c6;
+}
+.navbar-inverse {
+  border: #85c5c6;
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    width: 30%;
+    float: right;
+    background-color: #85c5c6;
+    margin: 0px -15px;
+  }
+}
+.navbar-inverse .navbar-nav li a {
   color: white;
+  font-size: 20px;
 }
 .header {
   text-align: center;
@@ -82,6 +99,7 @@ p {
 }
 .edu-list {
   padding-bottom: 25px;
+  padding-top: 20px;
 }
 .contact-box {
   height: 400px;
@@ -122,7 +140,7 @@ textarea {
 .send-button {
   background-color: white;
   margin-top: 5px;
-  width: 357px;
+  width: 350px;
   height: 37px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -138,6 +156,10 @@ textarea {
   margin-left: 20%;
   margin-right: 20%;
 }
+.footer a:hover {
+  color: #4c0099;
+  text-decoration: none;
+}
 .footer-links li {
   display: inline;
   font-size: 20px;
@@ -152,28 +174,4 @@ textarea {
 .footer-links p {
   font-size: 17px;
   color: #85c5c6;
-}
-a:hover {
-  color: #4c0099;
-}
-.navbar-toggle {
-  border: #85c5c6;
-}
-.navbar-collapse {
-  border-top: #85c5c6;
-}
-.navbar-inverse {
-  border: #85c5c6;
-}
-@media screen and (max-width: 768px) {
-  .navbar-nav {
-    width: 30%;
-    float: right;
-    background-color: #85c5c6;
-    margin: 0px -15px;
-  }
-}
-.navbar-inverse .navbar-nav li a {
-  color: white;
-  font-size: 20px;
 }
