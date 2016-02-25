@@ -1,5 +1,5 @@
 body {
-  padding-top: 85px;
+  padding-top: 40px;
   width: 100%;
   font-family: 'PT Sans', sans-serif;
 }
@@ -8,8 +8,7 @@ p {
 }
 .navbar {
   background-color: #85c5c6;
-  height: 80px;
-  margin-top: -10px;
+  height: 50px;
 }
 .nav-links {
   padding-top: 10px;
@@ -32,9 +31,6 @@ p {
 .header h1 {
   padding-bottom: -10px;
 }
-#skills {
-  padding-top: 47px;
-}
 .content-container {
   width: 100%;
 }
@@ -43,13 +39,13 @@ p {
   margin-right: 20%;
 }
 .content-box {
-  height: 60px;
+  height: 40px;
   border-top: 4px solid #85c5c6;
   border-bottom: 4px solid #85c5c6;
   text-align: center;
 }
-.content-box .h2 {
-  padding-bottom: 20px;
+.content-box p {
+  font-size: 25px;
 }
 .content-layout {
   display: inline;
@@ -174,6 +170,7 @@ a:hover {
     width: 30%;
     float: right;
     background-color: #85c5c6;
+    margin: 0px -15px;
   }
 }
 .navbar-inverse .navbar-nav li a {
